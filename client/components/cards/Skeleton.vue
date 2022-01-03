@@ -39,21 +39,3 @@
     </div>
   </li>
 </template>
-
-<style>
-.skeleton {
-  @apply text-opacity-0;
-  background-image: linear-gradient(100deg, #edf2f7 0%, #f4f7fa 20%, #edf2f7 40%);
-  background-position: 50%;
-  background-size: 200%;
-  animation: skeleton 1.5s infinite linear;
-}
-@keyframes skeleton {
-  0% {
-    background-position: 50%;
-  }
-  50%, 100% {
-    background-position: -90%
-  }
-}
-</style>

@@ -20,10 +20,42 @@ export interface MetApiResponse {
 
 export interface User {
   name: string
-  job: string
   email: string
+  id: number
   phone: string
+  address: string
+  city: string
+  state: string
+  zip: string
+  github: string
   avatar: string
 }
 
+export interface Experience {
+  company: string
+  title: string
+  start_date: string
+  end_date: string
+  description: string
+  id: number
+  user_id: number
+  isNew?: boolean
+}
+
+export interface Skill {
+  description: string
+  years_experience: string
+  user_id: number
+  id: number
+}
+
+export interface Interest {
+  description: string
+  user_id: number
+  id: number
+}
+
 export type Users = Array<User>
+export type Experiences = Array<Experience>
+export type Skills = Array<Skill>
+export type Interests = Array<Interest>

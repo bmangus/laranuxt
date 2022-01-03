@@ -1,12 +1,17 @@
 import type { Context } from '@nuxt/types'
 import type { GetterTree, ActionTree, MutationTree } from 'vuex'
+import type { Users, Skills, Interests, Experiences } from '@/types/api'
 
 export interface RootState {
   description: string
+  users?: Users
+  experience?: Experiences
+  skills?: Skills
+  interests?: Interests
 }
 
 export const state = (): RootState => ({
-  description: "I'm defined as an initial state",
+  description: 'I\'m defined as an initial state',
 })
 
 export const getters: GetterTree<RootState, RootState> = {
